@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Cell Challenge</title>
+</head>
+<body>
+    <header>
+        <div class="logo-bar">
+            <img src="./assets/img/JS.jpg" alt="JavaScript">
+            <img src="./assets/img/HTML.jpg" alt="HTML">
+            <img src="./assets/img/CSS.jpg" alt="CSS">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#hello">Hello button</a></li>
+                <li><a href="#counter">Counter button</a></li>
+                <li><a href="#selector">Selector button</a></li>
+                <li><a href="#validation">Validation button</a></li>
+                <li><a href="#change">Change color button</a></li>
+                <li><a href="#cycle">Cycle button</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hello" class="card">
+            <h2>Conditional Greeting</h2>
+        </section>
+        <section id="counter" class="card">
+            <h2>Counter</h2>
+        </section>
+        <section id="selector" class="card">
+            <h2>Random Selector</h2>
+        </section>
+        <section id="validation" class="card">
+            <h2>Input Validation</h2>
+                <form action="" method="post" id="form">
+                    <div class="box form">
+                        <h3 class="Form">Form</h3>
+                        <br>
+                        <div>
+                            <input class="valinput" type="text" placeholder="Name.."> <span class="line"></span>
+                            <label for=""  class="datos">Name</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Email.."> <span class="line"></span>
+                            <label for="" class="datos">Email</label>
+                            
+                        </div>
+                        <br>
+                        <div>
+                            <input type="text" name="Password" id="Password" type="password" placeholder="Password.."> <span class="line"></span>
+                            <label for="" class="datos">Contraseña</label>
+                        </div>
+                        <br>
+                        <button type="submit">Submit</button>
+                        <p class="warnings" id="warnings"></p>
+                    </div>
+                </form>
+        </section>
+        <section id="change" class="card">
+            <h2>Change Color</h2>
+        </section>
+        <section id="cycle" class="card">
+            <h2>Button with Cycle</h2>
+        </section>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>

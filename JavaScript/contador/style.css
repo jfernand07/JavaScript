@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 10%;
+    padding: 10px;
+    background: black;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 2px solid rgb(7, 47, 122);
+}
+
+#num{
+    color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    
+}
+
+.reset{
+    background-color: greenyellow;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+.reset:hover{
+    opacity: 0.4;
+    color: black;
+    
+}
+
+.resta{
+    background-color: rgb(209, 28, 28);
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+.resta:hover{
+    opacity: 0.4;
+    color: black;
+}
+
+
+
+.suma{
+    background-color: aqua;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+.suma:hover{
+    opacity: 0.4;
+    color: black;
+}
+
+
+
+.resta, .reset, .suma{
+    width: 80px;
+    height: 25px;
+}
