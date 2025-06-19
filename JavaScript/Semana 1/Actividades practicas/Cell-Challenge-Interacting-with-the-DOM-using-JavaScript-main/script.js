@@ -1,17 +1,31 @@
-const name = document.getElementById ("name")
-const email = document.getElementById ("email")
-const password = document.getElementById("password")
+const name = document.getElementById("name")
+const email = document.getElementById("email")
+const pass = document.getElementById("Passwords")  
 const form = document.getElementById("form")
-const warnings = document.getElementById("warnings")
-
-form.addEventListener("Submit", e=>{
+const message = document.getElementById("message")  
+form.addEventListener("submit", e => {
     e.preventDefault()
-    if(nombre.value.length <6) {
-        alert("Nombre muy corto")
+    let warnings = ""
+    let login = false
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+    message.innerHTML = ""
+
+    if (name.value.length < 6) {
+        warnings += `The name is not valid <br>`
+        login = true
+    }
+    if (!regexEmail.test(email.value)) {
+        warnings += `The email is not valid <br>`
+        login = true
+    }
+    if (pass.value.length < 8) {
+        warnings += `The password is not valid <br>`
+        login = true
+    }
+
+    if (login) {
+        message.innerHTML = warnings
+    } else {
+        message.innerHTML = `Submitted`
     }
 })
-
-
-
-
-//https://www.youtube.com/watch?v=36S19D6kZkc
