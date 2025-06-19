@@ -96,3 +96,92 @@ main {
 /* 
     End of the CSS for the page
 */
+
+
+/* 
+    Start of the CSS for the Valid button
+*/
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #1e3a5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.boxform {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.boxform:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.boxform h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.boxform input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd6dd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9fbfd;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.boxform input:focus {
+    border-color: #4f8fbf;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.boxform label {
+    font-size: 14px;
+    color: #4f8fbf;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.boxform button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4f8fbf;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boxform button:hover {
+    background-color: #3a6e94;
+}
+
+.warnings {
+    color: #d62828;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.submitted {
+    color: #2a9d8f;
+    font-weight: bold;
+}
