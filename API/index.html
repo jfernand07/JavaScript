@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrenamiento 3</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="./img/iconfinder-technologymachineelectronicdevice10-4026450_113340.png" type="image/x-icon">
+</head>
+<body>
+  <main class="main">
+    <section class="formulario">
+      <h1 class="title">Sistema de Colección de Productos</h1>
+
+      <div class="formcontainer">
+        <form class="form" action="">
+          <label for="nomb">Nombre del producto</label>
+          <input class="inputs" id="nomb" type="text" placeholder="Nombre" />
+
+          <label for="price">Precio del producto</label>
+          <input class="inputs" id="price" type="number" placeholder="Precio" />
+
+          <label for="img">URL de imagen</label>
+          <input class="inputs" id="img" type="text" placeholder="https://..." />
+
+          <button class="buttons" id="add" type="button">Agregar</button>
+          <button class="buttons" id="deleted" type="button">Eliminar</button>
+          <button class="buttons" id="update" type="button">Actualizar</button>
+        </form>
+      </div>
+
+      <div class="historycontainer">
+        <h2 class="title2">Lista de productos</h2>
+        <div class="historial" id="products"></div>
+        <p class="contador">Total Productos: <span id="number">0</span></p>
+      </div>
+
+      <!-- Zona de Cartas -->
+      <h2 class="title2">Zona de Cartas</h2>
+      <div class="cartas-container" id="cartas"></div>
+    </section>
+  </main>
+
+  <script src="./gestion_api.js"></script>
+</body>
+</html>

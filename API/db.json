@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": "f485",
+      "nombre": "headset",
+      "precio": "500",
+      "imagen": "https://elmangocr.com/wp-content/uploads/2023/07/Audifonos-Cable-Microfono-Gaming-Rojo.jpg"
+    },
+    {
+      "id": "1ed5",
+      "nombre": "mouse",
+      "precio": "5000",
+      "imagen": "https://tse2.mm.bing.net/th/id/OIP.-JfD1BPu2k16XYiq6jJsKwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": "i7wmkb",
+      "nombre": "PC Gamer",
+      "precio": "50000",
+      "imagen": "https://cdn2.dineroenimagen.com/media/dinero/images/2023/10/pc-gamer-barata.jpg"
+    },
+    {
+      "id": "eznf4w",
+      "nombre": "Teclado",
+      "precio": "120.000",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_670470-MLB78648589179_082024-O.webp"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+# 🛒 Sistema de Colección de Productos
+
+Este es un proyecto práctico que simula un sistema de gestión de productos usando tecnologías frontend y una API REST simulada con `JSON Server`. Puedes **crear**, **leer**, **actualizar** y **eliminar** productos, y verlos tanto en una **lista textual** como en **tarjetas visuales** con imágenes.
+
+---
+
+## 🔧 Tecnologías utilizadas
+
+- HTML5
+- CSS3 (Responsive y moderno)
+- JavaScript (Fetch API)
+- JSON Server (Simula una API REST local)
+
+---
+
+## 📦 Estructura de Archivos
+
+📁 proyecto/
+├── index.html → Página principal
+├── style.css → Estilos modernos y responsivos
+├── gestion_api.js → Lógica JavaScript CRUD con Fetch
+└── db.json → Base de datos local simulada
+
+Copiar
+Editar
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+### 1. Instalar JSON Server
+
+Si no tienes instalado `JSON Server`, usa el siguiente comando:
+
+```bash
+npm install -g json-server
+2. Ejecutar el servidor
+Desde la carpeta del proyecto, ejecuta:
+
+bash
+Copiar
+Editar
+json-server --watch db.json --port 3000
+Esto iniciará el servidor en: http://localhost:3000/productos
+
+3. Abrir la aplicación
+Abre index.html directamente en tu navegador (doble clic o con Live Server en VSCode).
+
+Funcionalidades
+Agregar productos con nombre, precio e imagen.
+
+Mostrar productos en una lista tipo historial.
+
+Mostrar productos como tarjetas con imagen y botones de acción.
+
+Editar y eliminar productos desde el formulario o directamente desde las tarjetas.
+
+Mostrar el total de productos disponibles.
+
+Responsive: funciona en celular, tablet y computadora.
+
+Consideraciones técnicas
+Los IDs de los productos se generan como cadenas alfanuméricas únicas para evitar conflictos con JSON Server.
+
+Todas las validaciones se hacen antes de enviar la información al servidor.
+
+Se hace manejo de errores y limpieza del formulario tras cada acción.

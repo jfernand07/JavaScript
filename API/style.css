@@ -1,0 +1,231 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(https://img.freepik.com/premium-photo/background_168501-6629.jpg);
+  color: #333;
+  padding: 1rem;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #82c9e5;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* TITULOS */
+.title {
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.title2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #dbeafe;
+  padding-bottom: 0.4rem;
+}
+
+/* FORMULARIO */
+.formcontainer {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.inputs:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.buttons {
+  padding: 0.7rem 1.4rem;
+  margin-bottom: 0.5rem;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buttons:hover {
+  background-color: #2563eb;
+}
+
+/* LISTA ESTILO TEXTO */
+.historial {
+  margin-top: 1rem;
+}
+
+.producto-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0f2fe;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.producto-item button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.producto-item button:hover {
+  background-color: #059669;
+}
+
+.contador {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* CARTAS RESPONSIVE */
+.cartas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  margin-bottom: 0.3rem;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 0.3rem 0;
+  color: #475569;
+}
+
+.card button {
+  margin-top: 0.5rem;
+  margin-right: 0.4rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card .edit {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.card .edit:hover {
+  background-color: #d97706;
+}
+
+.card .delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.card .delete:hover {
+  background-color: #dc2626;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .formcontainer {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .title2 {
+    font-size: 1.2rem;
+  }
+
+  .inputs {
+    font-size: 0.95rem;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card button {
+    font-size: 0.85rem;
+  }
+}
