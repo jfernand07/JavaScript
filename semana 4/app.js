@@ -12,7 +12,7 @@ document.querySelector(`[data-view="${vista}"]`).classList.add('active');
 if (vista === 'formulario') {
     renderFormulario();
 } else if (vista === 'historial') {
-    fetch('historial.html')
+    fetch('./navegacion/historial.html')
     .then(res => res.text())
     .then(html => {
         appView.innerHTML = html;
