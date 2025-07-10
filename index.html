@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SPA Interactiva</title>
+<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+    <h1><i class="fas fa-user-circle"></i> Aplicación Interactiva</h1>
+    <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider round"></span>
+    </label>
+    </div>
+
+    <!-- Barra de navegación SPA -->
+    <nav class="spa-nav">
+    <button data-view="formulario" class="nav-btn active">Formulario</button>
+    <button data-view="historial" class="nav-btn">Historial</button>
+    </nav>
+
+    <!-- Contenido dinámico -->
+    <div id="appView"></div>
+
+    <!-- Notificación -->
+    <div id="notification" class="notification">¡Datos guardados correctamente! 🎉</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
